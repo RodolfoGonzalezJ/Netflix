@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión - Netflix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/47c2bc92-5a2a-4f33-8f91-4314e9e62ef1/web/CO-es-20240916-TRIFECTA-perspective_d428c596-9d7d-4899-a7f4-1eaaa022daa8_small.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            
+        }
+
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 60px 68px 40px;
+            max-width: 400px;
+            width: 100%;
+            border-radius: 8px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .login-container h1 {
+            font-size: 32px;
+            margin-bottom: 28px;
+        }
+
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 16px;
+            margin: 10px 0;
+            background-color: #333;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 16px;
+            background-color: #e50914;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .login-container button:hover {
+            background-color: #f40612;
+        }
+
+        .login-container a {
+            color: #b3b3b3;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+
+        .login-container .help-links {
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .footer {
+            background-color: black;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #b3b3b3;
+            text-align: center;
+            padding: 20px 0;
+            padding-bottom: 90px;
+        }
+
+        .footer a {
+            color: #b3b3b3;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer select {
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Inicia sesión</h1>
+        <form>
+            <input type="email" placeholder="Email o número de celular">
+            <input type="password" placeholder="Contraseña">
+            <button type="submit" onclick="location.href='http://127.0.0.1:3000/login.html'">Iniciar sesión</button>
+            <div class="help-links">
+                <div>
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Recuérdame</label>
+                </div>
+                <a href="#">¿Necesitas ayuda?</a>
+            </div>
+            <a href="#" style="display: block; margin-top: 16px;">¿Primera vez en Netflix? Suscríbete ahora.</a>
+            <a href="#" style="display: block; margin-top: 8px;">¿Quieres ver Netflix ya? Ingresa tu código de inicio de sesión</a>
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <p>¿Preguntas? Llama al 01 800 917 1564</p>
+        <a href="#">Preguntas frecuentes</a> |
+        <a href="#">Centro de ayuda</a> |
+        <a href="#">Términos de uso</a> |
+        <a href="#">Privacidad</a> |
+        <a href="#">Preferencias de cookies</a> |
+        <a href="#">Información corporativa</a>
+        <br>
+        <select>
+            <option value="es">Español</option>
+            <option value="en">English</option>
+        </select>
+    </footer>
+</body>
+</html>

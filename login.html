@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertencia de Phishing</title>
+    <style>
+        /* Estilos globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .warning-container {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+            border-top: 10px solid #ffcc00;
+            position: relative;
+        }
+
+        .warning-container h1 {
+            font-size: 24px;
+            color: #e63946;
+            margin-bottom: 20px;
+        }
+
+        .warning-container p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .warning-container .icon {
+            font-size: 80px;
+            color: #e63946;
+            margin-bottom: 20px;
+        }
+
+        .warning-container .checklist {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .warning-container .checklist li {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .warning-container .checklist li::before {
+            content: '✔';
+            color: #e63946;
+            margin-right: 8px;
+        }
+
+        .warning-container a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #e63946;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .warning-container a:hover {
+            background-color: #d62828;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="warning-container">
+        <div class="icon">⚠️</div>
+        <h1>¡HEY, TEN CUIDADO!</h1>
+        <p>Siempre verifica los correos electrónicos antes de hacer clic. Podrías ser víctima de phishing o intentos fraudulentos. Asegúrate de que provengan de fuentes confiables.</p>
+
+        <ul class="checklist">
+            <li>Verifica el dominio del correo.</li>
+            <li>No hagas clic en enlaces sospechosos.</li>
+            <li>Nunca compartas información personal.</li>
+        </ul>
+
+        <a href="#">Más información sobre phishing</a>
+    </div>
+
+    <footer>
+        © 2024 Seguridad en Internet. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
